@@ -1,0 +1,9 @@
+body {
+  background: rgb(0, 0, 0);
+}
+.pause_music {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  color: red;
+}
