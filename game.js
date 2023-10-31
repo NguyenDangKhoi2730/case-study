@@ -66,14 +66,14 @@ const player = new Player({
 
     AttackRight: {
       frameRate: 3,
-      frameBuffer: 5,
+      frameBuffer: 7,
       loop: true,
       imageSrc: "./img/king/AttackRight.png",
     },
 
     AttackLeft: {
       frameRate: 3,
-      frameBuffer: 5,
+      frameBuffer: 7,
       loop: true,
       imageSrc: "./img/king/AttackLeft.png",
     },
