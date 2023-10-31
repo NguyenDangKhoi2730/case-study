@@ -18,6 +18,9 @@ class Player extends Sprite {
     this.gravity = 1.5;
 
     this.collisionBlocks = collisionBlocks;
+    this.sound = new Audio();
+    this.sound.src = "../../audio/human/swish-13.wav";
+    console.log(this.sound);
   }
 
   update() {
@@ -41,11 +44,13 @@ class Player extends Sprite {
       this.velocity.x = -5;
       this.lastDirection = "left";
     } else if (keys.e.presses) {
-      this.switchSprite("kingAttack");
-    } else {
-      if (this.lastDirection == "left") this.switchSprite("idleLeft");
-      else this.switchSprite("idleRight");
-    }
+      if (this.lastDirection == "left") {
+        this.switchSprite("AttackLeft");
+      } else {
+        this.switchSprite("AttackRight");
+      }
+    } else if (this.lastDirection == "left") this.switchSprite("idleLeft");
+    else this.switchSprite("idleRight");
   }
 
   switchSprite(name) {

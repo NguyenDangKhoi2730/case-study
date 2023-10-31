@@ -15,6 +15,11 @@ let soundEffects = {
     volume: 1,
     loop: true,
   }),
+
+  soundAttack: new Howl({
+    src: ["./audio/human/swish-13.wav"],
+    volume: 0.5,
+  }),
 };
 let music = true;
 window.onload = soundEffects.backgroundSound.play();
@@ -59,11 +64,18 @@ const player = new Player({
       imageSrc: "./img/king/runLeft.png",
     },
 
-    kingAttack: {
+    AttackRight: {
       frameRate: 3,
       frameBuffer: 5,
       loop: true,
-      imageSrc: "./img/king/Attack.png",
+      imageSrc: "./img/king/AttackRight.png",
+    },
+
+    AttackLeft: {
+      frameRate: 3,
+      frameBuffer: 5,
+      loop: true,
+      imageSrc: "./img/king/AttackLeft.png",
     },
 
     enterDoor: {

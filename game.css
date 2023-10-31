@@ -1,9 +1,18 @@
 body {
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 .pause_music {
+  font-size: large;
   width: 150px;
   height: 50px;
-  background-color: white;
-  color: red;
+  background-color: rgb(121, 118, 118);
+  color: rgb(255, 255, 255);
+}
+#huongdan {
+  font-size: xx-large;
+  position: absolute;
+  top: 10px;
+  right: 800px;
+  /* background-color: gray; */
+  color: rgb(0, 0, 0);
 }

@@ -1,5 +1,4 @@
 window.addEventListener("keydown", (event) => {
-  console.log(event.key);
   if (player.preventInput) return;
   switch (event.key) {
     case "ArrowUp":
@@ -36,7 +35,7 @@ window.addEventListener("keydown", (event) => {
 
     case "e":
       keys.e.presses = true;
-      console.log(keys.e.presses);
+      soundEffects.soundAttack.play();
       break;
   }
 });
