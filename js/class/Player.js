@@ -16,11 +16,7 @@ class Player extends Sprite {
     };
 
     this.gravity = 1.5;
-
     this.collisionBlocks = collisionBlocks;
-    this.sound = new Audio();
-    this.sound.src = "../../audio/human/swish-13.wav";
-    console.log(this.sound);
   }
 
   update() {
